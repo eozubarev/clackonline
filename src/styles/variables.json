@@ -2,12 +2,12 @@
   "text-color": "#414c63",
   "links-color": "#4b6fd7",
   "errors-color": "#cd1515",
-
   "bp-desktop-hd": "1800px",
   "bp-desktop": "1200px",
   "bp-tablets": "768px",
   "bp-phones": "480px",
-
-  "body-color": "#e8eff7"
-
+  "body-color": "#e8eff7",
+  "accent-color": "#0280bb",
+  "dots-color": "#1c8ec3",
+  "step-color": "#4d88bc"
 }

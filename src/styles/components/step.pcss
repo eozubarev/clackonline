@@ -1,0 +1,31 @@
+.step {
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 60px;
+    }
+    &__number {
+        margin-left: 15px;
+        margin-right: 20px;
+        position: relative;
+        z-index: 5;
+        & span {
+            font-weight: 500;
+            color: white;
+            &:before {
+                content: "";
+                position: absolute;
+                top: -3px;
+                left: -10px;
+                background-color: #4d88bc;
+                width: 4.0625rem;
+                height: 1.875rem;
+                z-index: -1;
+                border-radius: 18px;
+            }
+        }
+    }
+    &__info {
+        font-weight: 600;
+    }
+}
