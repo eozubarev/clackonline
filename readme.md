@@ -5,7 +5,7 @@
 
 ##  Чтобы развернуть проект необходимо:
 ```sh
-$ git clone git@github.com:eozubarev/vue-js.git
+$ git clone git@github.com:eozubarev/clackonline
 $ cd ls-advanced-portfolio
 $ yarn
 ```
