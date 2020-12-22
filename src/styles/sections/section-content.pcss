@@ -1,4 +1,11 @@
 .section-content {
+    padding: 0px 100px 0px 100px;
+    @include tablets() {
+        padding: 25px 70px 25px 70px;
+    }
+    @include phones() {
+        padding: 15px 17px 15px 17px;
+    }
     &__subtitle {
         padding-bottom: 20px;
         padding-top: 20px;

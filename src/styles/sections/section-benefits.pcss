@@ -4,7 +4,9 @@
     &__container {
         display: flex;
         justify-content: space-between;
-        // align-items: center;
+        @include tablets() {
+            flex-direction: column;
+        }
     }
     &__left {
         margin-right: 30px;

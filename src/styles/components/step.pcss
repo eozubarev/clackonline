@@ -1,5 +1,8 @@
 .step {
     width: 50%;
+    @include tablets() {
+        width: 100%;
+    }
     &--step-100 {
         width: 100%;
     }
@@ -7,12 +10,19 @@
         display: flex;
         justify-content: flex-start;
         margin-bottom: 60px;
+        @include tablets() {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
     }
     &__number {
         margin-left: 15px;
         margin-right: 20px;
         position: relative;
         z-index: 5;
+        @include tablets() {
+            margin-bottom: 15px;
+        }
         & span {
             font-weight: 500;
             color: white;

@@ -4,4 +4,20 @@
     margin-botton: 40px;
     background-color: white;
     border-radius: 10px;
+    @include tablets() {
+        padding: 25px 70px 25px 70px;
+        margin-top: 20px;
+        margin-botton: 20px;
+    }
+    @include phones() {
+        padding: 15px 17px 15px 17px;
+        margin-top: 20px;
+        margin-botton: 20px;
+    }
+    &__custom {
+        padding: 20px 70px 20px 70px;
+        @include phones() {
+            padding: 15px 17px 15px 17px;
+        }
+    }
 }
