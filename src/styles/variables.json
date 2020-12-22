@@ -4,6 +4,7 @@
   "errors-color": "#cd1515",
   "bp-desktop-hd": "1800px",
   "bp-desktop": "1200px",
+  "bp-desktop-992": "992px",
   "bp-tablets": "768px",
   "bp-phones": "480px",
   "body-color": "#e8eff7",
