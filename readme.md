@@ -7,7 +7,9 @@
 ```sh
 $ git clone git@github.com:eozubarev/clackonline-dev
 $ cd clackonline-dev
-$ yarn or npm i
+$ yarn
+or
+$ npm i
 ```
 
 ## Скрипты package.json:
