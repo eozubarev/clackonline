@@ -5,7 +5,7 @@
 
 ##  Чтобы развернуть проект необходимо:
 ```sh
-$ git clone git@github.com:eozubarev/clackonline
+$ git clone git@github.com:eozubarev/clackonline-dev
 $ cd ls-advanced-portfolio
 $ yarn
 ```
