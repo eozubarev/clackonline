@@ -8,6 +8,30 @@
                 margin-left: 0px;
             }
         }
+        &--top {
+            margin-top: 92px;
+            @include tablets() {
+                margin-top: 30px;
+            }
+        }
+        &--top-83 {
+            margin-top: 83px;
+            @include tablets() {
+                margin-top: 30px;
+            }
+        }
+        &--top-100 {
+            margin-top: 100px;
+            @include tablets() {
+                margin-top: 30px;
+            }
+        }
+        &--top-57 {
+            margin-top: 57px;
+            @include tablets() {
+                margin-top: 30px;
+            }
+        }
     }
     &__item {
         &--top {
@@ -21,12 +45,24 @@
         margin-bottom: 10px;
     }
     &__info {
-        
+        &--top {
+            margin-top: 74px;
+            margin-bottom: -42px;
+            @include tablets() {
+                margin: 0;
+            }
+        }
+        &--top-40 {
+            margin-top: 40px;
+        }
     }
     &__img {
         margin-bottom: 40px;
         @include tablets() {
             margin-bottom: 15px;
+        }
+        &--clack-ui {
+            max-height: 227px;
         }
     }
 }

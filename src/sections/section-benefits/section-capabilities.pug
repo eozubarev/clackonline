@@ -29,7 +29,7 @@ section.section-capabilities
         p.section-capabilities__text • Удаленное начало промывки 
         p.section-capabilities__text • Удаленная перезагрузка клапанаПолучает весь объём информации, доступный пользователю 
         p.section-capabilities__text + дополнительно:
-        p.section-capabilities__text • Архив и Диагностика
+        p.section-capabilities__text • Архив и диагностика
         p.section-capabilities__text • Обратная связь:
         p.section-capabilities__text • Конфигурация клапана
         p.section-capabilities__text • Настройки системы
@@ -45,7 +45,7 @@ section.section-capabilities
         h4.section-capabilities__info Получает весь объём информации, доступный пользователю + дополнительно:
 
     .section-capabilities__list
-        h4.section-capabilities__info • Архив и Диагностика
+        h4.section-capabilities__info • Архив и диагностика
 
     .section-capabilities__list
         h4.section-capabilities__info • Обратная связь:
@@ -53,7 +53,7 @@ section.section-capabilities
         p.section-capabilities__text • Настройки системы 
         p.section-capabilities__text • Удаленная блокировка/разблокировка к настройкам 
         p.section-capabilities__text • Удаленный сброс до заводских настроек
-    
+
     .section-connect__container
         .step
             .step__container
@@ -64,7 +64,7 @@ section.section-capabilities
             .step-block
                 .step-block__container
                     .step-block__item
-                        +image('section-capabilities/step-1/clack-ui.png','step-block__img')
+                        +image('section-capabilities/step-1/clack-ui.png','step-block__img step-block__img--clack-ui')
                         .step-block__info 
                             p 1.1 Откройте браузер и введите в адресную<br> строку: clackonline.ru
                             p 1.2 Авторизуйтесьили зарегистрируйтесь:<br> введите свой логин и пароль
@@ -72,7 +72,7 @@ section.section-capabilities
         .step
             .step__container
             .step-block
-                .step-block__container--two
+                .step-block__container--two.step-block__container--top-83
                     .step-block__item
                         +image('section-capabilities/step-1/web-ui.png','step-block__img')
                         .step-block__info 1.3 Откроется страница личного кабинета на портале:
@@ -88,14 +88,14 @@ section.section-capabilities
                 .step-block__container
                     .step-block__item
                         +image('section-capabilities/step-2/warning.png','step-block__img')
-                        .step-block__info 2.1 Предупреждение.<br> В верхней части страницы будет находиться раздел информации о состоянии ваших устройств (онлайн/оффлайн))
+                        .step-block__info 2.1 Предупреждение.<br> В верхней части страницы будет находиться раздел информации о состоянии ваших устройств (онлайн/оффлайн)
     .section-connect__container
         .step--step-100
             .step-block
                 .step-block__container
                     .step-block__item
                         +image('section-capabilities/step-2/clear-water.png','step-block__img')
-                        .step-block__info 2.2 С помощью раздела “Система очистки воды” можно быстро переходить между вашими изделиями (системами) с платами Wi-fi, если у Вас установленно несколько систем для разных задач. Каждая система может состоять из нескольких фильтров и их можно посмотреть в разделе «Состав изделия»
+                        .step-block__info 2.2 С помощью раздела “Система очистки воды” можно быстро переходить между вашими изделиями (системами) с платами Wi-Fi, если у Вас установленно несколько систем для разных задач. Каждая система может состоять из нескольких фильтров и их можно посмотреть в разделе «Состав изделия»
     .section-connect__container
         .step--step-100
             .step-block
@@ -124,18 +124,12 @@ section.section-capabilities
                         +image('section-capabilities/step-3/23.png','step-block__img')
         .step
             .step-block
-                .step-block__container.step-block__container--two
+                .step-block__container.step-block__container--two.step-block__container--top-100
                     .step-block__item
-                            ul.step-block__list
-                                -
-                                    var list = ['• МАС-адрес;','• Тип системы;', '• Полный ресурс (м3);',
-                                            '• Жесткость исходной воды (мг-экв/л);', '• Текущее время;', 
-                                            'Текущий расход воды (м3/ч);','• Оставшийся ресурс (м3);',
-                                            '• Объём очищенной воды после последнейпромывки (м3);',
-                                            '• Число дней после последней промывки• Максимальная скорость потока воды за последние 7 дней (м3/ч)']
-                                each item in list
-                                    li= item
-                                    
+                        ul.step-block__list
+                            each val in [{text: '• МАС-адрес;'}, {text: '• Тип системы;'}, {text: '• Полный ресурс (м<sup>3</sup>)'}, {text: '• Жесткость исходной воды (мг-экв/л);'}, {text: '• Текущее время;'}, {text: '• Текущий расход воды (м<sup>3</sup>/ч);'}, {text: '• Оставшийся ресурс (м<sup>3</sup>);'}, {text: '• Объём очищенной воды после последней промывки (м<sup>3</sup>);'}, {text: '• Число дней после последней промывки;'}, {text: '• Максимальная скорость потока воды за последние 7 дней (м<sup>3</sup>/ч)'} ]
+                                li !{val.text}
+
     .section-connect__container
         .step
             .step__container
@@ -149,15 +143,12 @@ section.section-capabilities
                         +image('section-capabilities/step-4/24.png','step-block__img')
         .step
             .step-block
-                .step-block__container.step-block__container--two
+                .step-block__container.step-block__container--two.step-block__container--top-100
                     .step-block__item
-                            ul.step-block__list
-                                -
-                                    var list = ['• График “Расход воды, л/мин”;','• График  “Оставшийся ресурс, %";', '• График  “Расход воды, м3”;',
-                                            '• График “Расход реагента, кг”;']
-                                each item in list
-                                    li= item
-                                    
+                        ul.step-block__list
+                            each val in [{text: '• График "Расход воды, л/мин";'}, {text: '• График  “Оставшийся ресурс, %";'}, {text:'• График  “Расход воды, м<sup>3</sup>;'}, {text:'• График “Расход реагента, кг”'}]
+                                li !{val.text}
+
     .section-connect__container
         .step
             .step__container
@@ -167,9 +158,9 @@ section.section-capabilities
                         +image('section-capabilities/step-4/25.png','step-block__img')
         .step
             .step-block
-                .step-block__container.step-block__container--two
+                .step-block__container.step-block__container--two.step-block__container--top-57
                     .step-block__item
-                        .step-block__info 4.1 Для графика “Расход воды, л/мин” можно изменять интервал обновления в пределах от 1 до 30 секунд, а для графиков “Расход воды, м3” и “Расход реагента, кг” можно выбратьинтервал в днях
+                        .step-block__info 4.1 Для графика “Расход воды, л/мин” можно изменять интервал обновления в пределах от 1 до 30 секунд, а для графиков “Расход воды, м<sup>3</sup>” и “Расход реагента, кг” можно выбрать интервал в днях
 
     .section-connect__container
         .step
@@ -180,7 +171,7 @@ section.section-capabilities
                         +image('section-capabilities/step-4/26.png','step-block__img')
         .step
             .step-block
-                .step-block__container.step-block__container--two
+                .step-block__container.step-block__container--two.step-block__container--top-57
                     .step-block__item
                         .step-block__info 4.2 Так же вы можете посмотреть табличные данные по датам: расход воды, расход реагента, максимальный расход воды и количество регенераций
 
@@ -190,33 +181,32 @@ section.section-capabilities
                 .step__number
                     span Шаг 5
                 .step__info
-                    p Промывка. В этом разделе вы можете узнать следующие данные:
+                    p Промывка. В этом разделе выводится:
             .step-block
                 .step-block__container
                     .step-block__item
                         +image('section-capabilities/step-5/27.png','step-block__img')
                         ul.step-block__list
                             -
-                                var list = ['• Время начала промывки;','• Число дней между промывками;', '• Кнопка “Промывка”;',
-                                        '• Кнопка “Следующая стадия”']
+                                var list = ['• Время начала промывки;','• Число дней между промывками;']
                             each item in list
                                 li= item
                     .step-block__item.step-block__item--top
-                        .step-block__info 4.2 Кнопки “Промывка” и “Следующая стадия” позволяют немедленно начать промывку и перевести клапан на следующую стадию промывки.
-                
+                        .step-block__info Кнопки “Промывка” и “Следующая стадия” позволяют немедленно начать промывку и перевести клапан на следующую стадию промывки.
+
     .section-connect__container
         .step--step-100
             .step__container
             .step-block
                 .step-block__container
                     .step-block__item
-                        +image('section-capabilities/step-5/27.png','step-block__img')
+                        +image('section-capabilities/step-5/28.png','step-block__img')
                         .step-block__item.step-block__item--bottom
                             .step-block__info После начала промывки или если клапан находится в стадии промывки выводится:
                         ul.step-block__list
                             -
                                 var list = ['• Время до окончания промывки;','• Название текущей стадии;', '• Время до окончания текущей стадии;',
-                                        '• Статус промывки с каждой стадией и временем до ее окончания (%)', '• Ход промывки (%)']
+                                    '• Статус промывки с каждой стадией и временем до ее окончания (%);', '• Ход промывки (%)']
                             each item in list
                                 li= item
     .section-connect__container
@@ -230,29 +220,22 @@ section.section-capabilities
                 .step-block__container
                     .step-block__item
                         +image('section-capabilities/step-6/29.png','step-block__img')
+
         .step
             .step-block
-                .step-block__container.step-block__container--two
+                .step-block__container.step-block__container--two.step-block__container--top-100
                     .step-block__item
-                        .step-block__info Нажав кнопку «Перезагрузка», вы мгновенно<br> перезагрузите свою систему, сбросив все значения до заводских.
                             .step-block__item--top
                                 ul.step-block__list
                                     -
-                                        var list = ['• Параметр «Время клапана»”;','• Параметр «Жёсткость»;', '• Параметр «Дней между промывками»;']
+                                        var list = ['• Параметр «Время клапана»;','• Параметр «Жёсткость»;', '• Параметр «Дней между промывками»;', '• Параметр «Время промывки»']
                                     each item in list
                                         li= item
                             .step-block__item--top
-                                .step-block__info параметр «Время промывки» Нажав кнопку «Перезагрузка», вы мгновенно перезагрузите свою систему, сбросив все значения до заводских.Для того, чтобы внесенные вами изменения вступили в силу нажмите кнопку «Применить»
+                                .step-block__info Для того, чтобы внесенные вами изменения вступили в силу нажмите кнопку «Применить»
+
+.step-block__info Нажав кнопку «Перезагрузка», вы мгновенно перезагрузите свою систему, сбросив все значения до заводских.
+
 
     .section-connect__container
-        .step
-            .step__container
-            .step-block
-                .step-block__container
-                    .step-block__item
-                        +image('section-capabilities/step-6/30.png','step-block__img')
-        .step
-            .step-block
-                .step-block__container.step-block__container--two
-                    .step-block__item
-                        .step-block__info Нажав кнопку «Перезагрузка», вы мгновенно<br> перезагрузите свою систему, сбросив все значения до заводских.
+        .step-block__info.step-block__info--top-40 В нижней части страницы находится раздел с контактной информацией
